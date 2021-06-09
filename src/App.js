@@ -19,7 +19,7 @@ import {
 import { MdSend /* MdList */ } from 'react-icons/md'
 import BlogHeader from './BlogHeader';
 
-import awsConfig from '../srxc/aws-exports'
+import awsConfig from '../src/aws-exports'
 Amplify.configure(awsConfig)
 
 const App = () => {
