@@ -1,0 +1,16 @@
+{
+  "auth": {
+    "s3testfc96ab40": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  },
+  "storage": {
+    "s3fileuploader": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation"
+    }
+  }
+}
