@@ -19,8 +19,8 @@ import {
 import { MdSend /* MdList */ } from 'react-icons/md'
 import BlogHeader from './BlogHeader';
 
-import awsConfig from './aws-exports.js'
-Amplify.configure(awsConfig)
+//import awsConfig from './aws-exports.js'
+//Amplify.configure(awsConfig)
 
 const App = () => {
   const [name, setName] = useState('')
