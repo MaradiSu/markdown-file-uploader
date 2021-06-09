@@ -23,9 +23,9 @@ import {
 //Amplify.configure(awsConfig)
 
 const App = () => {
-  const [name, setName] = useState('')
-  const [file, setFile] = useState('')
-  const [response, setResponse] = useState('')
+  //const [name, setName] = useState('')
+  //const [file, setFile] = useState('')
+  //const [response, setResponse] = useState('')
 
  /* const onChange = (e) => {
     e.preventDefault()
