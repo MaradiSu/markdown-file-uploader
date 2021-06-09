@@ -2,7 +2,7 @@ import React, { useState} from 'react'
 import './App.css'
 import Exmaple from './Exmaple';
 //import Homepage from './Homepage'
-import Amplify, { Storage } from 'aws-amplify'
+import  { Storage } from 'aws-amplify'
 import ReadmeStr from './README.md';
 import { MdSend /* MdList */ } from 'react-icons/md'
 import { makeStyles } from '@material-ui/core/styles';

@@ -9,15 +9,15 @@ import {
 //import Homepage from './Homepage'
 import CreateBlog from './CreatePost';
 import BlogReviewCard from './ListBlogs';
-import Amplify, { Storage } from 'aws-amplify'
+//import Amplify, { Storage } from 'aws-amplify'
 import {
   AmplifyAuthenticator,
   AmplifySignOut,
   AmplifySignIn,
   AmplifySignUp,
 } from '@aws-amplify/ui-react'
-import { MdSend /* MdList */ } from 'react-icons/md'
-import BlogHeader from './BlogHeader';
+//import { MdSend /* MdList */ } from 'react-icons/md'
+//import BlogHeader from './BlogHeader';
 
 //import awsConfig from './aws-exports.js'
 //Amplify.configure(awsConfig)
@@ -27,7 +27,7 @@ const App = () => {
   const [file, setFile] = useState('')
   const [response, setResponse] = useState('')
 
-  const onChange = (e) => {
+ /* const onChange = (e) => {
     e.preventDefault()
     if (e.target.files[0] !== null) {
       setFile(e.target.files[0])
@@ -39,7 +39,7 @@ const App = () => {
     e.preventDefault()
     if (file) {
       Storage.put(name, file, {
-        /* level: 'protected', */
+         level: 'protected', 
         contentType: file.type,
       })
         .then((result) => {
@@ -53,11 +53,12 @@ const App = () => {
         .catch((err) => {
           console.log(err)
           setResponse(`Can't upload file: ${err}`)
+          console.log(response)
         })
     } else {
       setResponse(`Files needed!`)
     }
-  }
+  }*/
   
   return (
     <AmplifyAuthenticator>
@@ -120,8 +121,8 @@ function Home() {
   return <h2>Home</h2>;
 }
 
-function Manage() {
+/*function Manage() {
   return <h2>Manage Posts</h2>;
-}
+}*/
 
 export default App
