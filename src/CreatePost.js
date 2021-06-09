@@ -2,14 +2,14 @@ import React, { useState} from 'react'
 import './App.css'
 import Exmaple from './Exmaple';
 //import Homepage from './Homepage'
-import  { Storage } from 'aws-amplify'
+import Amplify, { Storage } from 'aws-amplify'
 import ReadmeStr from './README.md';
 import { MdSend /* MdList */ } from 'react-icons/md'
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 
-//import awsConfig from './aws-exports.js'
-//Amplify.configure(awsConfig)
+import awsConfig from './aws-exports.js'
+Amplify.configure(awsConfig)
 
 const useStyles = makeStyles((theme) => ({
   root: {

@@ -1,4 +1,4 @@
-//import React, { useState } from 'react'
+import React, { useState } from 'react'
 import './App.css'
 import {
   BrowserRouter as Router,
@@ -6,26 +6,26 @@ import {
   Route,
   Link
 } from "react-router-dom";
-//import Homepage from './Homepage'
+import Homepage from './Homepage'
 import CreateBlog from './CreatePost';
 import BlogReviewCard from './ListBlogs';
-//import Amplify, { Storage } from 'aws-amplify'
+import Amplify, { Storage } from 'aws-amplify'
 import {
   AmplifyAuthenticator,
   AmplifySignOut,
   AmplifySignIn,
   AmplifySignUp,
 } from '@aws-amplify/ui-react'
-//import { MdSend /* MdList */ } from 'react-icons/md'
-//import BlogHeader from './BlogHeader';
+import { MdSend /* MdList */ } from 'react-icons/md'
+import BlogHeader from './BlogHeader';
 
-//import awsConfig from './aws-exports.js'
-//Amplify.configure(awsConfig)
+import awsConfig from './aws-exports.js'
+Amplify.configure(awsConfig)
 
 const App = () => {
-  //const [name, setName] = useState('')
-  //const [file, setFile] = useState('')
-  //const [response, setResponse] = useState('')
+  const [name, setName] = useState('')
+  const [file, setFile] = useState('')
+  const [response, setResponse] = useState('')
 
  /* const onChange = (e) => {
     e.preventDefault()
@@ -121,8 +121,8 @@ function Home() {
   return <h2>Home</h2>;
 }
 
-/*function Manage() {
+function Manage() {
   return <h2>Manage Posts</h2>;
-}*/
+}
 
 export default App
