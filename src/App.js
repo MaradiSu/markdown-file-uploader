@@ -19,8 +19,8 @@ import {
 import { MdSend /* MdList */ } from 'react-icons/md'
 import BlogHeader from './BlogHeader';
 
-import awsConfig from './aws-exports.js'
-Amplify.configure(awsConfig)
+//import awsConfig from './aws-exports.js'
+//Amplify.configure(awsConfig)
 
 const App = () => {
   const [name, setName] = useState('')
@@ -62,18 +62,18 @@ const App = () => {
   return (
     <AmplifyAuthenticator>
       <AmplifySignIn
-        headerText='AWS TCS Team, Sign-In with Your E-Mail Address'
+        headerText='Blog Editor, Sign-In with Your E-Mail Address'
         slot='sign-in'
       />
       <AmplifySignUp
-        headerText='AWS TCS Team, Sign-Up with Your Valid E-Mail Address'
+        headerText='Blog Editor, Sign-Up with Your Valid E-Mail Address'
         slot='sign-up'
       />
      
       <div className='header'>
       
         <h2>
-          <a href='/'>Simple Markdown Editor</a>
+          <a href='/'>Edit and Manage Your MD Blogs</a>
         </h2>
         <Router>
       <div>

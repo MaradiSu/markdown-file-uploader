@@ -8,7 +8,7 @@ import { MdSend /* MdList */ } from 'react-icons/md'
 import { makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 
-import awsConfig from './aws-exports.js'
+//import awsConfig from './aws-exports.js'
 Amplify.configure(awsConfig)
 
 const useStyles = makeStyles((theme) => ({
