@@ -33,6 +33,13 @@ const CreateBlog = () => {
   alert("data passed" + e);
   if(blogheader==='')
   alert("Title cannot be empty");
+  axios.post('https://sheltered-tundra-48014.herokuapp.com/create-md?username=maradisu', e)
+      .then(response => this.setState({ post_id: response.post_id }))
+      .catch(error => {
+          //this.setState({ errorMessage: error.message });
+          console.error('There was an error!', error);
+      });
+
   }
   const onChange = (e) => {
     e.preventDefault()
